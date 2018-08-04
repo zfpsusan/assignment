@@ -33,7 +33,7 @@ public class Solution {
 		rooster.sing();
 		System.out.println();
 
-		System.out.println("parrot.");
+		System.out.println("parrot");
 		Parrot parrot = new Parrot();
 		Dog dog = new Dog();
 		parrot.setLiveWith(dog);
@@ -43,5 +43,28 @@ public class Solution {
 		parrot.sing();
 		parrot.setLiveWith(rooster);
 		parrot.sing();
+		System.out.println();
+
+		System.out.println("fish");
+		Fish fish = new Fish();
+		fish.walk();
+		fish.sing();
+		fish.swim();
+		System.out.println();
+
+		System.out.println("shark");
+		Shark shark = new Shark();
+		shark.walk();
+		shark.sing();
+		shark.swim();
+		shark.character();
+		System.out.println();
+
+		System.out.println("clownfish");
+		Clownfish clownfish = new Clownfish();
+		clownfish.walk();
+		clownfish.sing();
+		clownfish.swim();
+		clownfish.character();
 	}
 }
