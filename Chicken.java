@@ -19,18 +19,29 @@ public class Chicken extends Bird{
 	public void setMature(boolean isMature) {
 		this.isMature = isMature;
 	}
+	
+	Chicken() {}
+	
+	Chicken(String sex, boolean isMature) {
+		this.sex = sex;
+		this.isMature = isMature;
+	}
 
-	void sing() {
+	public void sing() {
 		if ("male".equalsIgnoreCase(sex) &&
 				isMature) {
-			System.out.println("“Cock-a-doodle-doo");
+			System.out.println("Cock-a-doodle-doo");
 		} else {
 			System.out.println("Cluck, cluck");
 		}		
 	}
 	
-	void fly() {
+	public void fly() {
 		System.out.println("I can not fly");
+	}
+	
+	public boolean canFly() {
+		return false;
 	}
 
 }

@@ -1,11 +1,12 @@
 package codeAssignment;
 
-public class Animal {
-	void walk() {
-		System.out.println("I am walking");
-	}
-	
-	void sing() {
-		System.out.println("I am singing");
-	}
+public interface Animal {
+	public boolean canWalk();
+	public boolean canSing();
+	public boolean canSwim();
+	public boolean canFly();
+	public void walk();
+	public void sing();
+	public void swim();
+	public void fly();
 }

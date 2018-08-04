@@ -11,7 +11,7 @@ public class Parrot extends Bird{
 		this.liveWith = liveWith;
 	}
 	
-	void sing() {
+	public void sing() {
 		if (liveWith != null) {
 			liveWith.sing();
 		}

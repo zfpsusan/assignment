@@ -2,6 +2,7 @@ package codeAssignment;
 
 public class Solution {
 	public static void main (String[] args) {
+		/*
 		System.out.println("bird");
 		Bird bird = new Bird();
 		bird.walk();
@@ -88,5 +89,44 @@ public class Solution {
 		caterpillar.fly();
 		caterpillar.sing();
 		System.out.println();
+		*/
+		
+		Animal[] animals = new Animal[]{
+				new Bird(),
+				new Duck(),
+				new Chicken(),
+				new Chicken("male", true),
+				new Parrot(),
+				new Fish(),
+				new Shark(),
+				new Clownfish(),
+				new Dolphin(),
+				new Dog(),
+				new Butterfly("butterfly"),
+				new Cat() }; 		
+		int totalWalk = 0, totalFly = 0, totalSwim = 0, totalSing = 0;
+		
+		for (int i=0; i<animals.length; i++) {
+			if (animals[i].canWalk()) {
+				totalWalk++;
+			}
+			
+			if (animals[i].canFly()) {
+				totalFly++;
+			}
+			
+			if (animals[i].canSwim()) {
+				totalSwim++;
+			}
+			
+			if (animals[i].canSing()) {
+				totalSing++;
+			}
+		}
+		
+		System.out.println("Walk " + totalWalk);
+		System.out.println("Fly " + totalFly);
+		System.out.println("Swim " + totalSwim);
+		System.out.println("Sing " + totalSing);
 	}
 }
