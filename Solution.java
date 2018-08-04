@@ -32,5 +32,16 @@ public class Solution {
 		rooster.fly();
 		rooster.sing();
 		System.out.println();
+
+		System.out.println("parrot.");
+		Parrot parrot = new Parrot();
+		Dog dog = new Dog();
+		parrot.setLiveWith(dog);
+		parrot.sing();
+		Cat cat = new Cat();
+		parrot.setLiveWith(cat);
+		parrot.sing();
+		parrot.setLiveWith(rooster);
+		parrot.sing();
 	}
 }
