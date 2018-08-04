@@ -66,5 +66,13 @@ public class Solution {
 		clownfish.sing();
 		clownfish.swim();
 		clownfish.character();
+		System.out.println();
+
+		System.out.println("dolphin");
+		Dolphin dolphin = new Dolphin();
+		dolphin.walk();
+		dolphin.sing();
+		dolphin.swim();
+		System.out.println();
 	}
 }
